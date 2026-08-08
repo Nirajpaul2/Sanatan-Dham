@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account - Sanatan Dham App</title>
+    <meta name="description" content="Submit an account deletion request for your Sanatan Dham user profile. Learn what data is deleted and how data removal is processed.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="brand">
+                <div class="brand-icon">ॐ</div>
+                Sanatan Dham
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#features">Features</a>
+                <a href="index.html#vip">VIP Premium</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms.html">Terms</a>
+                <a href="delete-account.html" class="active">Delete Account</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact</a>
+                <a href="index.html#download" class="btn-nav">Download App</a>
+            </nav>
+            <button class="mobile-toggle" aria-label="Toggle navigation menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <span class="badge"><i data-lucide="user-x"></i> User Rights</span>
+            <h1>Account Deletion Request</h1>
+            <p>We respect your control over your data. Request permanent deletion of your Sanatan Dham account and associated information.</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="legal-content">
+        <div class="container">
+            <div class="legal-card delete-account-card">
+                <h2>Account Deletion Guidelines</h2>
+                <p>If you wish to delete your Sanatan Dham mobile application account, you can initiate a deletion request below or directly inside the app under <em>Profile &gt; Settings &gt; Delete Account</em>.</p>
+
+                <div style="margin: 30px 0;">
+                    <h3>What happens when your account is deleted:</h3>
+                    <ul>
+                        <li><strong>Personal Profile:</strong> Your registered phone number, email address, user profile name, and authentication records are permanently erased from our primary database.</li>
+                        <li><strong>Saved Favorites & History:</strong> Your saved Aartis, Bhajans, favorite wallpaper list, ringtone downloads, and listening history will be deleted.</li>
+                        <li><strong>Device Tokens:</strong> Your Firebase Push Notification device ID will be deactivated, stopping all daily devotional push notifications.</li>
+                        <li><strong>VIP Subscriptions:</strong> Active Razorpay AutoPay mandates should be cancelled prior to account deletion to avoid unexpected bank debit renewals.</li>
+                    </ul>
+                </div>
+
+                <div style="margin: 30px 0;">
+                    <h3>Information retained for legal compliance:</h3>
+                    <p>In accordance with statutory financial regulations in India, historical transaction records (Razorpay payment receipts, GST invoices, and mandate authorization timestamps) are retained for legal and auditing purposes as required by law.</p>
+                </div>
+
+                <!-- Account Deletion Form -->
+                <div class="delete-form">
+                    <h3 style="margin-top: 0; color: #FFF; font-size: 1.3rem;">Submit Online Deletion Request</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 24px;">Please enter the registered email address or phone number linked to your Sanatan Dham account.</p>
+
+                    <form id="accountDeleteForm">
+                        <div class="form-group">
+                            <label for="deleteEmail">Registered Phone Number or Email</label>
+                            <input type="text" id="deleteEmail" class="form-control" placeholder="e.g. +91 9876543210 or user@domain.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="deleteReason">Reason for Deletion (Optional)</label>
+                            <textarea id="deleteReason" class="form-control" placeholder="Tell us why you are deleting your account..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-danger">
+                            <i data-lucide="trash-2" style="vertical-align: middle; margin-right: 6px;"></i> Request Permanent Deletion
+                        </button>
+                    </form>
+
+                    <div id="deleteNotice" style="display: none;"></div>
+                </div>
+
+                <div style="margin-top: 36px; text-align: center; font-size: 0.9rem; color: var(--text-muted);">
+                    Need help or want to talk to our support team first? Contact us at <a href="mailto:support@sanatanapp.com" style="color: var(--primary-gold);">support@sanatanapp.com</a>.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">
+                        <div class="brand-icon">ॐ</div>
+                        Sanatan Dham
+                    </div>
+                    <p class="footer-desc">Your official spiritual companion for daily Aartis, Bhajans, Mantras, Guided Meditation, Ringtones, 4K Live Wallpapers, and Devotional Movies.</p>
+                </div>
+                
+                <div>
+                    <div class="footer-title">Quick Links</div>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="index.html#features">Features</a>
+                        <a href="index.html#vip">VIP Premium</a>
+                        <a href="subscription.html">Subscription Policy</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="footer-title">Legal & Compliance</div>
+                    <div class="footer-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms & Conditions</a>
+                        <a href="delete-account.html">Delete Account</a>
+                        <a href="content-policy.html">Content Policy</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="footer-title">Support & Contact</div>
+                    <div class="footer-links">
+                        <a href="contact.html">Contact Us</a>
+                        <a href="mailto:support@sanatanapp.com">support@sanatanapp.com</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div>© 2026 Sanatan Dham. All rights reserved.</div>
+                <div>Designed with Devotion for Sanatan Dharma</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
